@@ -1,0 +1,64 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1px;
+}
+h2 {
+  font-size: 3rem;
+  margin: 3px;
+}
+
+h3 {
+  color: grey;
+  font-size: xx-large;
+}
+
+img {
+  width: 15rem;
+  float: right;
+}
+header p {
+  margin-top: 15px;
+}
+
+main {
+  margin-inline: 10rem;
+}
+
+p:last-of-type {
+  clear: right;
+}
+ul {
+  padding-left: 1px;
+  list-style: none;
+}
+
+#name {
+  display: block;
+}
+
+#direccion {
+  display: block;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+input, textarea {
+  background-color: rgb(134, 131, 131);
+}
+
+
+::placeholder {
+color: black;
+}

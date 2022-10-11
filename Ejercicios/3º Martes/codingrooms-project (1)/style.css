@@ -1,0 +1,55 @@
+* {
+  margin: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  background-color: rgba(117, 168, 240, 255);
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: rgba(117, 168, 240, 255);
+}
+
+li {
+  list-style: circle;
+}
+
+.importante {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+table thead {
+  background-color: rgb(117, 168, 240);
+  color: white;
+}
+
+table tbody tr:nth-of-type(odd) {
+  background-color: rgb(222, 235, 255);
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: rgb(185, 210, 252);
+}
+
+table tbody th {
+  background-color: rgba(182, 204, 247, 255);
+}
+
+#descanso {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+th, tr {
+    width: 7rem ;
+    height: 3rem;
+   }
+
+td {
+    padding-left: 15px;
+   }
