@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(3, 150px);
+    /* PODEMOS MOVER LA CUADRICULA */
+    justify-content: center;/* SIEMPRE EN HORIZONTAL */
+    align-content: center; /* SIEMPRE EN VERTICAL */
+    /* PODEMOS MOVER EL CONTENIDO DE LAS CELDAS */
+ /*    justify-items: end;
+    align-items: center; */
+
+    /* podemos abreviarlas */
+    place-content: center end;/* vertical y horizontal */
+    place-items: start stretch;/* stretch es el compartamiento por defecto, indica que ocupe todo el alto y ancho */
+
+}
+
+div {
+    border: 1px solid black;
+}
+
+div:nth-child(6) {
+    /* alineamoa este div solo en el eje horizontal al centro */
+    justify-self: center;
+}
+
+div:last-of-type {
+ /* ALINEAMOS A ESTE DIV SOLO EN EL EJE VERTICAL AL CENTRO */   
+ align-self: center;
+}
+
+div:nth-child(2) {
+    /* con place-self indicamos la alineacion en vertical y horizontal */
+    place-self: end start;
+}
+
+div:first-of-type {
+    font-size: 3 rem;
+}

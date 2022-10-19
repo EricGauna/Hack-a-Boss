@@ -1,0 +1,11 @@
+#noticias{
+    color: red;
+}
+
+p.textoNoticia{
+    color: green;
+}
+
+section .textoNoticia{
+    color: blue;
+}

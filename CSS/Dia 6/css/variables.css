@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declaramos la variables en cualquier sitio, estas se heredan de padres a hijos */
+
+html {
+    --colorprincipal: rgb(4, 0, 250);
+    --colorback: #35aabb
+}
+
+header {
+    padding: calc();
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--colorprincipal);
+}
+
+h1{
+    font-size: 3 rem;
+}

@@ -1,0 +1,106 @@
+/* las animaciones siempre van al final del archivo css */
+
+h1 {
+    font-size: 3.5rem;
+    animation: aparecer;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+
+    animation-fill-mode: backwards;
+    /* backwards -> inicia el elemento con el valor del "from" de la animacion
+        forwards -> inicia el elemento con el valor del "to" de la animacion 
+        both -> es una mezcla, inicia con el valor del "from", y termina con el valor del "to"*/
+
+        animation-iteration-count: infinite;/* repite 3 veces la animacion */
+
+        animation-direction: alternate;
+        /* normal -> direccion normal de la animacion (from-to) 
+        reverse -> direccion alreves(to->from)*/
+        /* alternate -> hace ambas */
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+/* ------------------------- */
+h2 {
+    font-size: 3rem;
+    animation: arcoiris 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes arcoiris {
+    0% {
+        color: red;
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: blue;
+    }
+}
+
+div#letras{
+    font-size: 3rem;
+    height: 10rem;
+    width: 10rem;
+
+    text-align: center;
+    background-color: cyan;
+    padding: 1rem;
+
+    animation: fuentes 4s;
+    animation-iteration-count: infinite;
+   
+}
+
+@keyframes fuentes {
+    from{
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+div#like {
+    font-size: 3rem;
+    height: 10rem;
+    width: 10rem;
+
+    text-align: center;
+    background-color: cyan;
+    padding: 1rem;
+    
+ animation: megusta infinite 3s 200ms   ;
+    animation-delay: 200ms;
+}
+
+@keyframes megusta {
+    20% {
+        transform:scale(1.25)
+    }
+    50% {
+        transform: scale(0.75);
+    }
+    80% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

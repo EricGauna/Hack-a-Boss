@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  box-sizing: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(24, 22, 22);
+  color: white;
+}
+
+header {
+  display: flex;
+  height: 16vh;
+  padding: 0rem 2rem;
+
+  gap: 2rem;
+  align-items: center;
+}
+
+header svg {
+  fill: white;
+  width: 2rem;
+}
+
+header nav menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+header > menu {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  gap: 1rem;
+}
+main {
+  padding: 0rem 1rem;
+}
+section {
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+section menu img {
+  width: 18rem;
+}
+
+section menu {
+  list-style: none;
+  display: flex;
+  overflow: auto;
+  gap: 0.3rem;
+}
+
+section ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #e50914dc;
+}
+section ::-webkit-scrollbar {
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+/* footer {
+  display: flex;
+  align-self: center;
+ 
+} */
+footer , footer menu {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+  margin-bottom: auto;
+  display: flex;
+  list-style: none;
+}
+
+ 
+
+footer a {
+  text-decoration: none;
+  color: grey;
+}

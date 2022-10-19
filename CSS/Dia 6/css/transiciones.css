@@ -1,0 +1,63 @@
+/* las transiciones hay que activarlas de alguna manera,normalemento usaremos el hover */
+
+h1 {
+  color: blue;
+  font-size: 3rem;
+  /* lo minimo para la transicion es indicar:
+    -La propiedad a transicionar.
+    -La duracion (en segundos (s), o en milisegundos (ms) */
+  transition: transform 2s;
+  transition-property: color, transform;
+  transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);}
+  /* 
+  transition-timing-function, valores base:
+  -easy-in-> comienza despacio y acelera la animacion
+  -easy-out-> comienza rapido y pierde velocidad conforme termina la animacion */
+header:hover h1 {
+  color: red;
+  transform: translateX(10rem);
+  
+}
+/* ------------------------- */
+
+div {
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+    background-color: cyan;
+
+    margin: 2rem;
+    padding: 1rem;
+}
+
+div#rotate {
+    transition: transform 2s;
+}
+
+div#rotate:hover {
+    transform:rotate(360deg)
+}
+div#img {
+    /* transicionamos la rotacion(transform) /duracion/delay */
+    transition: transform 4000ms 2000ms;
+    cursor: pointer;
+}
+div#img:hover {
+    transform:rotate(360deg)
+}
+div#bordes {
+    transition: border-radius 250ms, font-size 500ms;
+}
+
+div#bordes:hover {
+    font-size: 3rem;
+    border-radius: 25px;
+}
+
+div#opacidad {
+    opacity: 0;
+    transition: opacity 2000ms;
+}
+div#opacidad:hover {
+    opacity: 1;
+}

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+  }
+  div {
+    border: 1px solid black;
+  }
+  section {
+    margin:  5 rem 0;
+    display: grid;
+  }
+ /*  AUTO-fit */
+ #fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1 fr));
+ }
+ /* Auto-fill mete todas las celdas que pueda aunque */

@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas: 
+    "verde rojo rojo"
+    "gris gris azul"
+    "gris gris azul"
+    ;
+}
+
+div {
+    border: 1px solid black;
+}
+#rojo{
+    background-color: red;
+    grid-area: rojo;
+}
+
+#azul {
+    background-color: blue;
+    grid-area: azul;
+}
+
+#gris {
+    background-color: grey;
+    grid-area: gris;
+}
+
+#verde{
+    background-color: green;
+    grid-area: verde;
+}

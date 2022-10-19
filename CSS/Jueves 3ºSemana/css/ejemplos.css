@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {background-color: brown;
+
+  }
+
+  body {
+    background-color: cadetblue;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 5rem 1fr 3rem;
+
+  }
+  header {
+    color: white;
+    background-color: black;
+   text-align: center;
+
+   display: grid;
+   grid-template-rows:  1fr 2 rem;
+  }
+
+  button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  nav {
+    background-color: brown;
+  }
+  menu {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 2rem 1rf 2rem 2rem;
+  }
+
+  main {
+    background-color: white;
+  }
+
+  footer {
+    color: white;
+    background-color: black;
+  }

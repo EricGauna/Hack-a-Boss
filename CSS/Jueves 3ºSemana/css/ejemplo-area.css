@@ -1,0 +1,23 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-auto-columns: 50%;
+    grid-template-areas: 
+    "imagen"
+    "parrafo";
+}
+img {
+    grid-area: imagen;
+}
+
+p {
+    grid-area: parrafo;
+}
+
+@media (min-width: 650px) {
+
+    body {
+        grid-template-areas: "imagen parrafo";
+    }
+    
+}

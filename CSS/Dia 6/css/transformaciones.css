@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+/* Scale -cambiar el tamaño del elemento */
+div:nth-child(2) {
+    transform:scale(1.25);
+    /* escala a lo alto y a lo ancho */
+}
+
+div:nth-child(3) {
+    transform: scale(1.5, 2); /* eje horizontal/eje vertical */
+}
+
+/* translate- TRaslada un elemento en base a una medidaa nuestra eleccion */
+
+div:nth-child(4) {
+    transform: translate(10rem, 50 px);
+    /* horizontal-en negativo a la izquierda- en positivo a la derecha */
+    /* vertical-en negativo hacia arriba-en positivo hacia abajo */
+}
+div:nth-child(5) {
+transform:translateX(10rem)
+}
+div:nth-child(6) {
+    transform: rotate(90deg);/* aqui se aplican grados para rotar con deg */
+}
+
+div:nth-child(7) {
+    transform: rotate(45deg);
+    transform-origin: bottom center; /* podemos modificar el origen de la rotacion */
+}
+
+div:nth-child(8) {
+    transform: skew(35deg);/* Deforma el elemento sin sentido alguno */
+}
+
+/* podemos combinar todas las opciones anteriores */
+div:nth-last-of-type {
+    transform: scale(1.25) rotate(45deg) translateX(10rem);
+}
