@@ -7,7 +7,7 @@ body {
 
   grid-template-areas:
     "header header"
-    "main main"
+    "nav main"
     "footer footer";
 }
 @media (max-width: 600px) {
@@ -57,6 +57,7 @@ article .description {
 }
  
 body > nav menu {
+  grid-area: nav;
   display: flex;
   flex-direction: column;
 }

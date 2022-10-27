@@ -28,8 +28,9 @@ svg {
 
 
 svg#Layer_1.like {
-  fill: red;
-  animation: like 0.5s ease-in-out
+  
+  animation: like 0.5s;
+  animation-fill-mode: forwards;
 }
 @keyframes like {
   25% {
@@ -45,7 +46,8 @@ svg#Layer_1.like {
   }
 
   100% {
-    transform: scale(0.95);
+    fill: red;
+    transform: scale(1);
   }
 
 }
