@@ -1,0 +1,24 @@
+/* 
+
+    Vamos a crear varias clases de css que asignaremos 
+    a los elementos del html desde JS
+    
+*/
+.dark{
+    color: white;
+    background-color: black;
+}
+
+.light {
+    background-color: aqua;
+    color: cadetblue;
+}
+
+.importante {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.grande {
+    font-size: 1.5rem;
+}
