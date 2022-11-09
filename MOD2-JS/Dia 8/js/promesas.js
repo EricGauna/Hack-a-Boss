@@ -26,9 +26,11 @@
 // Vamos a pedir unos datos a la api de rick y morty
 // para hacer unas peticiones a apis externas
 
-fetch('https://rickandmortyapi.com/api/character')
+/* fetch('https://rickandmortyapi.com/api/character')
     // res hace referencia a la respuesta de la promesa
     .then((res) => res.json())// Siempre vamos a hacer esta linea para trabajar con las apis
     // res.json devuelve otra promesa
-    .then((data) => console.log(data))
-    .catch((error) => console.error(error))
+    .then((data) => console.log(data))// data es la respuesta de la api en formato objeto
+    .catch((error) => console.error(error)); */
+
+    
